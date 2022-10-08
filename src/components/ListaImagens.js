@@ -1,10 +1,11 @@
 import React from 'react'
 import Imagem from './Imagem'
 
-const ListaImagens = ({pics}) => {
+const ListaImagens = ({pics, imgStyle}) => {
   return (
     pics.map((pic, key) => (
-      <Imagem 
+      <Imagem
+        imgStyle={imgStyle} 
         pic={pic.src.small}
         key={pic.id}
         alt={pic.alt}
